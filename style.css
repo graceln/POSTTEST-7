@@ -1,0 +1,364 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+#movies {
+   filter: brightness(35%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fcfcfc;
+    color: #1a1818;
+    transition: .5s;
+}
+
+
+.checkbox {
+    float: right;
+    transform: translate(150%, -210%);
+}
+
+
+p {
+    font-family: 'Nunito',sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+header {    
+    position: absolute;
+    /* background-color: #fcfcfc; */
+    /* color: #1a1818; */
+    /* color: white; */
+    top: 0;
+    left: 0;
+    padding: 0px 100px;
+    width: 100%;
+    box-sizing: border-box;   
+ 
+}
+
+header .logo {
+    /* color: black; */
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+  
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}   
+
+header nav ul li a {
+    /* background-color: #1a1818; */
+    /* color: #fcfcfc; */
+    color: white;
+    /* color: black; */
+    height: 60px;
+    line-height: 60px;
+    padding: 0 50px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom: 1px solid red;
+    transition: 0.2s;
+}
+
+img {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.box .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box .heading  h2 {
+    font-size: 3.125rem;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.box .heading  #h5 {
+    font-size: 1.625rem;
+    color: #fff;
+}
+
+.box .heading #p {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.box .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.box .search input {
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 1px;
+    padding-bottom: 10px 10px 0 0;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+
+.box .search a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.60);
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 100px;
+    padding: 0 10px;
+}
+
+.card {
+    padding: 0 300px ;
+    margin: 0;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px; 
+}
+
+footer {
+    /* background-color: #1a1818; */
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    /* color: #fff; */
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.upper h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+ 
+}
+
+.upper p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 14px;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none; 
+    color: black;
+}
+/* 
+.socials a i {
+    font-size: 1.2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: red;
+} */
+
+.bottom { 
+    /* background:#1d1c1c; */
+    width: 100%;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.radio {
+    display: none;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 800px;
+    margin: 3% auto;
+
+}
+
+.slider {
+    width: 100%;
+    margin: 0;
+    height: 0;
+    padding-top: 55%;
+    background: #141414;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.slide {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1,1);
+    transition: 1.5s;
+}
+
+.dots {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots label {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    margin: 0 10px;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: 0.2s ease-in-out;
+}
+
+.dots label:hover {
+    opacity: 0.7;
+}
+
+#radio-1:checked ~ #slide-1, 
+#radio-2:checked ~ #slide-2, 
+#radio-3:checked ~ #slide-3, 
+#radio-4:checked ~ #slide-4 {
+    opacity: 1;
+}
+
+#radio-1:checked ~ #slide-1 img, 
+#radio-2:checked ~ #slide-2 img, 
+#radio-3:checked ~ #slide-3 img, 
+#radio-4:checked ~ #slide-4 img {
+    transform: scale(1);
+} 
+
+#radio-1:checked ~ .dots #label-1,
+#radio-2:checked ~ .dots #label-2,
+#radio-3:checked ~ .dots #label-3,
+#radio-4:checked ~ .dots #label-4 { 
+    background: red;
+    opacity: 1;
+} 
+
+
+input[type="checkbox"] {
+    position: relative;
+    padding: 0 22px;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3664ff;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5 ease;
+}
+
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+ 
+.dark{
+    background-color: #1a1818;
+    color: #fcfcfc;
+}
+
+

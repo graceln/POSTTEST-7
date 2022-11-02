@@ -1,0 +1,31 @@
+form {
+    width:308px;
+    float: right;
+    /* transform: translate(63px, -50px); */
+    transform: translate(-4px, -50px);
+}
+input[type="text"] {
+    width: 50%;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+input[type="text"]:focus{
+    border: 1px solid #1dbcfd;
+
+}
+
+button {
+    background: #0275d8;
+    color: #f7f7f7;
+    height: 33px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    left:-5px;
+    position:relative;
+}
+

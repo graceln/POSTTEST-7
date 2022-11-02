@@ -1,0 +1,141 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+#movies {
+   filter: brightness(35%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+
+
+p {
+    font-family: 'Nunito',sans-serif;
+    font-size: 14px;
+}
+
+header {    
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 0px 100px;
+    width: 100%;
+    box-sizing: border-box;   
+ 
+}
+
+header .logo {
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+  
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}   
+
+header nav ul li a {
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 50px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: red;
+    transition: 0.2s;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #0275d8;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.edit {
+    background: #f0ad4e;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.hapus {
+    background: #d9534f;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table td, table th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #292b2c;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #f0eaea;
+}
+
+footer {
+    width: 100%;
+    background: black;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    height: 30px;
+    
+}
